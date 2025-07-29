@@ -18,8 +18,8 @@ body:
       id: real-result
       attributes:
         label: What actually happened?
-        description: Tell us what you were trying to do, and what you wanted to happen.
-        placeholder: It actually crashed instead!
+        description: Tell us what you did and what really ended up happening.
+        placeholder: But, it crashed unexpectedly instead!
       validations:
         required: true
     
@@ -27,6 +27,7 @@ body:
       id: environment
       attributes:
         label: What environment and version did the bug occur in?
+        description: "PS: If you are running on Linux, you can optionally paste the result of `uname -a` here, too!"
         placeholder: Version v1.0.1 running on Ubuntu 22.04
       validations:
         required: true
