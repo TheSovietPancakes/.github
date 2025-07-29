@@ -1,0 +1,41 @@
+name: Bug Report
+description: Report when something unexpected occurs.
+title: "Bug: "
+labels: ["bug"]
+assignees:
+ - TheSovietPancakes
+body:
+    - type: textarea
+      id: expected-result
+      attributes:
+        label: What did you expect to happen?
+        description: Tell us what you were trying to do, and what you wanted to happen.
+        placeholder: I tried installing the program.
+      validations:
+        required: true
+
+    - type: textarea
+      id: real-result
+      attributes:
+        label: What actually happened?
+        description: Tell us what you were trying to do, and what you wanted to happen.
+        placeholder: It actually crashed instead!
+      validations:
+        required: true
+    
+    - type: input
+      id: environment
+      attributes:
+        label: What environment and version did the bug occur in?
+        placeholder: Version v1.0.1 running on Ubuntu 22.04
+      validations:
+        required: true
+
+    - type: checkboxes
+      id: terms
+      attributes:
+        label: Last check
+        description: By checking this box, you agree to be possibly prompted for more information in this thread and you also agree to the Code of Conduct.
+        options:
+         - label: I agree to give further information if asked and follow the Code of Conduct
+           required: true
