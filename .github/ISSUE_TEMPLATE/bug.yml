@@ -28,7 +28,7 @@ body:
       attributes:
         label: What environment and version did the bug occur in?
         description: "PS: If you are running on Linux, you can optionally paste the result of `uname -a` here, too!"
-        placeholder: Version v1.0.1 running on Ubuntu 22.04
+        placeholder: Version v1.0.1 running on Ubuntu 22.04 x64, ...
       validations:
         required: true
 
